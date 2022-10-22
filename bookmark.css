@@ -1,0 +1,52 @@
+body {
+    background-color: transparent;
+}
+
+.bookbox {
+    overflow: hidden;
+    width: 100%;
+}
+
+.books {
+    overflow-y: scroll;
+    width: 102vw;
+  }
+
+  .bookmark {
+    border-top: 2.5px solid rgba(74, 66, 102, .255);
+    /* display: flex; */
+    /* font-family: "Lucida Console", Monaco, monospace;
+    font-size: 400%;
+    font-weight: 100; */
+    padding: 5%;
+  }
+
+  .bookmark>p {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 120%;
+  }
+
+  .bookmark:nth-of-type(odd) {
+    text-align: right;
+  }
+
+  .bookmark:nth-of-type(odd)>p {
+    margin-right: 1%;
+  }
+
+  .bookmark:nth-of-type(even) {
+    text-align: left;
+  }
+
+  .bookmark:nth-of-type(even)>p {
+    margin-left: 1%;
+  }
+
+  .bookmark>a {
+    /* border-top: 2px solid rgba(74, 66, 102, .255); */
+    color: rgb(70, 70, 70);
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 700%;
+    font-weight: 100;
+    text-decoration: none;
+  }

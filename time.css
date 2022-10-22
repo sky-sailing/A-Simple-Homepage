@@ -1,0 +1,59 @@
+body {
+    background-color: transparent;
+}
+
+@font-face {
+    font-family: ITCAvantGardePro-Bold;
+    src: url(./Font/ITCAvantGardePro-Bold.ttf);
+
+    font-family: ITCAvantGardePro-XLt;
+    src: url(./Font/ITCAvantGardePro-XLt.ttf);
+}
+
+.Time {
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    justify-content: flex-end;
+}
+
+.Time>time {
+    font-size: 400%;
+    padding-right: 5%;
+    text-align: right;
+}
+
+#y {
+    font-family: ITCAvantGardePro-Bold;
+    font-weight: bold;
+    color: rgba(50, 50, 50, 0.99);
+}
+
+#w {
+    font-family: ITCAvantGardePro-Bold;
+    font-weight: bold;
+    color: rgba(50, 50, 50, 0.6);
+}
+
+#d {
+    font-family: ITCAvantGardePro-Bold;
+    font-weight: bold;
+    color: rgba(50, 50, 50, 0.6);
+}
+
+#m {
+    font-family: ITCAvantGardePro-Bold;
+    font-weight: bold;
+    color: rgba(50, 50, 50, 0.99);
+}
+
+#t {
+    font-family: ITCAvantGardePro-XLt;
+    color: rgba(50, 50, 50, 0.99);
+}
+
+#s {
+    font-family: ITCAvantGardePro-Bold;
+    font-weight: bold;
+    color: rgba(50, 50, 50, .6);
+}
