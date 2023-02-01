@@ -4,10 +4,10 @@ body {
 
 @font-face {
     font-family: ITCAvantGardePro-Bold;
-    src: url(./Font/ITCAvantGardePro-Bold.ttf);
+    src: url(./font/ITCAvantGardePro-Bold.ttf);
 
     font-family: ITCAvantGardePro-XLt;
-    src: url(./Font/ITCAvantGardePro-XLt.ttf);
+    src: url(./font/ITCAvantGardePro-XLt.ttf);
 }
 
 .Time {
