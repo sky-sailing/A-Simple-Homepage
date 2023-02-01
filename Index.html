@@ -26,6 +26,7 @@
 
 <body>
   <div class="search">
+
     <form class="search_bar">
       <input type="submit" class="search_submit" id="search_submit" value="✢">
       <select id="search_web" class="search_web">
@@ -45,19 +46,31 @@
     <script src="./sou.js"></script>
 
     <div class="box">
+
       <div class="menu">
         <div class="one">
-          <h1><a class="titles" href="bookmark.html" target="framebox">Bookmarks</a></h1>
+          <h1><a class="titles" href="./bookmark.html" target="framebox">Bookmarks</a></h1>
         </div>
         <div class="one">
-          <h1><a class="titles" href="time.html" target="framebox">Time</a></h1>
+          <h1><a class="titles" href="./time.html" target="framebox">Time</a></h1>
         </div>
+        <div class="two">
+          <h1><a class="m-titles" onclick="toggleContent()" href="./bookmark.html" target="framebox">Bookmarks</a></h1>
+        </div>
+        <div class="two">
+          <h1><a class="m-titles" onclick="toggleContent()" href="./time.html" target="framebox">Time</a></h1>
+        </div>
+
       </div>
-      <div class="container">
-        <iframe class="framebox" name="framebox" src="time.html" frameborder="0"></iframe>
+
+      <div class="container" id="container">
+        <button class="back-btn" onclick="back()">back</button>
+        <iframe class="framebox" name="framebox" src="./bookmark.html" frameborder="0"></iframe>
       </div>
+      <script src="./two.js"></script>
     </div>
-  </div>
+
+
   </div>
 
 </body>
