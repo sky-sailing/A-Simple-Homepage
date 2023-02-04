@@ -2,23 +2,18 @@ body {
   background-color: transparent;
 }
 
+/* ::-webkit-scrollbar { 
+  width: 0 !important;
+} */
+
 .bookbox {
   overflow: hidden;
   width: 100%;
 }
 
-.books {
-  overflow-y: scroll;
-  width: 102vw;
-}
-
 .bookmark {
   border-top: 2.5px solid rgba(74, 66, 102, .255);
-  /* display: flex; */
-  /* font-family: "Lucida Console", Monaco, monospace;
-    font-size: 400%;
-    font-weight: 100; */
-  padding: 7.5%;
+  padding: 5%;
 }
 
 .bookmark>p {
@@ -57,10 +52,6 @@ body {
   .bookmark a {
     font-size: 500%;
     font-weight: 200;
-  }
-
-  .books {
-    width: 101vw;
   }
 }
 
