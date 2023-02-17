@@ -5,27 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title id="title">A Simple Homepage</title>
-  <script>
-    var d = new Date()
-    var time = d.getHours()
-    if (time < 24) {
-      document.getElementById("title").innerHTML = "Good evening!";
-    }
-    if (time < 18) {
-      document.getElementById("title").innerHTML = "Good afternoon!";
-    }
-    if (time < 12) {
-      document.getElementById("title").innerHTML = "Good morning!";
-    }
-    if (time < 5) {
-      document.getElementById("title").innerHTML = "Go to sleep!";
-    }
-  </script>
   <link href="./css/style.css" rel="stylesheet">
+  <script src="./js/index/title.js"></script>
 </head>
 
 <body>
-  <div class="search">
+  <div id="framework">
 
     <form class="search_bar">
       <input type="submit" class="search_submit" id="search_submit" value="✢">
@@ -43,27 +28,30 @@
         </ul>
       </div>
     </form>
-    <script src="./js/sc.js"></script>
+    <script src="./js/index/sc.js"></script>
 
-    <div class="box">
+    <div class="case">
 
       <div class="menu">
         <div class="one">
-          <h1><a class="titles" onclick="toggleContent()" href="./bookmark.html" target="framebox">Bookmarks</a></h1>
+          <h1><a class="titles" onclick="toggleContent()" href="./bookmark.html" target="box">Bookmarks</a></h1>
         </div>
+        <!-- <div class="one">
+          <h1><a class="titles" onclick="toggleContent()" href="./tool.html" target="box">Tool</a></h1>
+        </div> -->
         <div class="one">
-          <h1><a class="titles" onclick="toggleContent()" href="./time.html" target="framebox">Time</a></h1>
+          <h1><a class="titles" onclick="toggleContent()" href="./time.html" target="box">Time</a></h1>
         </div>
       </div>
 
-      <div class="container" id="container">
+      <div class="content" id="content">
         <button class="back-btn" onclick="back()">︿</button>
-        <iframe class="framebox" name="framebox" src="./bookmark.html" frameborder="0"></iframe>
+        <iframe class="box" name="box" frameborder="0" src="./bookmark.html"></iframe>
       </div>
-      <script src="./js/m-content.js"></script>
+      <script src="./js/index/m-content.js"></script>
     </div>
 
-
+    <!-- <script src="./js/index/backgroud.js"></script> -->
   </div>
 
 </body>
