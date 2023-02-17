@@ -1,7 +1,7 @@
 if (window.innerWidth < 650) {
-function toggleContent() {
+  function toggleContent() {
     var title = document.querySelector(".menu");
-    var content = document.querySelector(".container");
+    var content = document.querySelector(".content");
     var backBtn = document.querySelector(".back-btn");
     title.style.display = "none";
     content.style.display = "inline";
@@ -10,7 +10,7 @@ function toggleContent() {
 
   function back() {
     var title = document.querySelector(".menu");
-    var content = document.querySelector(".container");
+    var content = document.querySelector(".content");
     var backBtn = document.querySelector(".back-btn");
     title.style.display = "flex";
     content.style.display = "none";
