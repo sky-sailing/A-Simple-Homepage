@@ -1,4 +1,3 @@
-
 body {
     background: rgba(255, 255, 255, 0);
     margin: 0;
@@ -14,7 +13,7 @@ body {
     padding-right: 5%;
 }
 
-div > span {
+div>span {
     font-family: "Comic Sans MS", cursive, sans-serif !important;
     font-weight: bold !important;
 }

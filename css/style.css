@@ -1,12 +1,11 @@
 body {
-  background: rgb(255, 255, 255);
+  background: rgb(202, 202, 202);
+  /* background: url(./img/background.jpg);
+  background-size: cover; */  
   margin: 0;
 }
 
-.search {
-  background: rgb(202, 202, 202);
-  /* background: url(./img/background.jpg);
-  background-size: cover; */
+#framework {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -102,7 +101,7 @@ body {
 
 /* ——————————————————————————————————————————分割线———————————————————————————————————————————————————— */
 
-.box {
+.case {
   display: flex;
   height: 70vh;
   width: 100vw;
@@ -122,12 +121,6 @@ body {
   margin-right: 10%;
 }
 
-.two {
-  display: none;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
 a.titles {
   color: rgb(70, 70, 70);
   font-family: "Lucida Console", Monaco, monospace;
@@ -137,7 +130,7 @@ a.titles {
   text-decoration: none;
 }
 
-.container {
+.content {
   /* display: flex;*/
   margin-left: 10%;
   margin-right: 2.5vw;
@@ -145,7 +138,7 @@ a.titles {
   width: 85vw;
 }
 
-.framebox {
+.box {
   height: 103%;
   overflow: hidden;
   width: 103%;
@@ -167,7 +160,7 @@ a.titles {
     font-size: 15vw;
   }
 
-  .container {   
+  .content {   
     display: none;
     margin-left: 10%;
     margin-right: 2.5vw;
