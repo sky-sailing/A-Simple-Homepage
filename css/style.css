@@ -1,8 +1,12 @@
 body {
-  background: rgb(202, 202, 202);
-  /* background: url(./img/background.jpg);*/
+  background-color: rgb(202, 202, 202);
+  /* background: url(./img/background.jpg); */
   /* background-size: cover; */
   margin: 0;
+}
+
+.case::-webkit-scrollbar { 
+  width: 0 !important;
 }
 
 #framework {

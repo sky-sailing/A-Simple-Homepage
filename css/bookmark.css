@@ -2,9 +2,9 @@ body {
   background-color: rgb(202, 202, 202);
 }
 
-/* ::-webkit-scrollbar { 
+body::-webkit-scrollbar { 
   width: 0 !important;
-} */
+}
 
 .bookbox {
   overflow: hidden;
