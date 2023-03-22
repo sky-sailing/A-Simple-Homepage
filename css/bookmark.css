@@ -40,7 +40,7 @@ body::-webkit-scrollbar {
 .bookmark a {
   /* border-top: 2px solid rgba(74, 66, 102, .255); */
   color: rgb(70, 70, 70);
-  font-family: "Lucida Console", Monaco, monospace;
+  /* font-family: "Lucida Console", Monaco, monospace; */
   font-size: 700%;
   font-weight: 100;
   text-decoration: none;
@@ -51,20 +51,17 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 500px) and (min-width: 391px) {
   .bookmark a {
     font-size: 500%;
-    font-weight: 200;
   }
 }
 
 @media screen and (max-width: 400px) {
   .bookmark a {
     font-size: 300%;
-    font-weight: 200;
   }
 }
 
 @media screen and (max-width: 300px) {
   .bookmark a {
     font-size: 120%;
-    font-weight: 200;
   }
 }
