@@ -160,10 +160,6 @@ a.titles {
 /* ——————————————————————————————————————————分割线———————————————————————————————————————————————————— */
 
 @media screen and (max-width: 650px) {
-  a.titles {
-    font-size: 15vw;
-  }
-
   .content {
     display: none;
     margin-left: 2.5vw;
