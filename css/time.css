@@ -12,6 +12,7 @@ body {
 .Time>time {
     font-size: 400%;
     padding-right: 5%;
+    line-height: 15vh;
     text-align: right;
 }
 
@@ -54,5 +55,6 @@ body {
 @media screen and (max-width: 600px) {
     .Time>time {
         font-size: 500%;
+        line-height: 2vh;
     }
 }
