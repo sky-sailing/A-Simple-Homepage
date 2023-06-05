@@ -46,7 +46,7 @@ body {
   color: rgb(74, 66, 102);
   float: left;
   font-family: Impact, Charcoal, sans-serif;
-  font-size: 2.25em;
+  font-size: 2.5em;
   font-weight: 500;
   height: 60px;
   max-width: 200px;
@@ -129,12 +129,12 @@ body {
   color: rgb(74, 66, 102);
   float: left;
   font-family: Impact, Charcoal, sans-serif;
-  font-size: 2.25em;
+  font-size: 2.5em;
   font-weight: 600;
   height: 60px;
   letter-spacing: 1.5px;
   max-width: 200px;
-  min-width: 90px;
+  min-width: 50px;
   outline: 0;
   text-align: center;
   width: 20%;
