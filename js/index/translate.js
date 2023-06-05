@@ -74,7 +74,7 @@ translate_bar.addEventListener('submit', async (event) => {
   const text = formData.get('text');
   const targetLang = formData.get('targetLang');
 
-  const response = await fetch('/js/index/api.js', {
+  const response = await fetch('/js/index/api', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
