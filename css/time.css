@@ -50,3 +50,11 @@ body {
     font-weight: bold;
     color: rgba(50, 50, 50, .6);
 }
+
+
+@media screen and (max-width: 600px) {
+    .Time>time {
+        font-size: 500%;
+        line-height: 16.5vh
+    }
+}
