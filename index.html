@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="title">MAIN</title>
+  <title id="title">HOME</title>
   <link rel="stylesheet" type="text/css" href="./css/style.css">
   <script src="./js/index/title.js"></script>
 </head>
@@ -12,21 +12,36 @@
 <body>
   <div id="framework">
 
-    <form class="search_bar">
-      <input type="submit" class="search_submit" id="search_submit" value="✢">
-      <select id="search_web" class="search_web">
-        <option value="https://www.bing.com/search?q=">Bing</option>
-        <option value="https://www.baidu.com/s?wd=">Baidu</option>
-        <option value="https://duckduckgo.com/?q=">Duckduckgo</option>
-        <option value="https://www.google.com/search?q=">Google</option>
-      </select>
-      <label style="display: block; overflow: hidden;">
-        <input id="search_input" class="search_input" type="text" value="" autocomplete="off" .">
-      </label>
-      <div class="suggest">
-        <ul id="search-result">
-        </ul>
+    <form id="translate_bar">
+      <select aria-label="translate_language" id="translate_select" class="translate_select" name="targetLang">
+        <option aria-label="English" value="en">English</option>
+        <option aria-label="Chinese" value="zh">中文</option>
+        <option aria-label="Japanese" value="ja">日本语</option>
+        <option aria-label="Korean" value="ko">한국어</option>
+        <option aria-label="French" value="fr">Français</option>
+        <option aria-label="German" value="de">Deutsch</option>
+        <option aria-label="Spanish" value="es">español</option>
+        <input aria-label="translate_input" id="translate_input" class="translate_input" type="text" name="text"
+          value="" autocomplete="off">
+        <input aria-label="translate_submit" id="translate_submit" class="submit" type="submit" name="translate_submit"
+          value="✢">
+    </form>
+
+    <form id="search" class="search">
+      <div id="search_bar" class="search_bar">
+        <select aria-label="search_web" id="search_web" class="search_web">
+          <option aria-label="Bing" value="https://www.bing.com/search?q=">Bing</option>
+          <option aria-label="Baidu" value="https://www.baidu.com/s?wd=">Baidu</option>
+          <option aria-label="Duckduckgo" value="https://duckduckgo.com/?q=">Duckduckgo</option>
+          <option aria-label="Google" value="https://www.google.com/search?q=">Google</option>
+        </select>
+        <input aria-label="search_input" id="search_input" class="search_input" type="text" value="" autocomplete="off">
+        <input aria-label="search_submit" id="search_submit" class="search_submit" type="submit" value="✢">
       </div>
+        <div id="suggest" class="suggest">
+        <ul id="search_result">
+        </ul>
+      </div>  
     </form>
     <script src="./js/index/sc.js"></script>
 
@@ -34,22 +49,31 @@
 
       <div class="menu">
         <div class="one">
-          <h1><a class="titles" onclick="toggleContent()" href="./bookmark.html" target="box">BOOKMARKS</a></h1>
+          <h1><a id="bookmark" class="titles" onclick="back()" href="./bookmark.html" target="box">BOOKMARKS</a></h1>
         </div>
-        <!-- <div class="one">
-          <h1><a class="titles" onclick="toggleContent()" href="./tool.html" target="box">TRANSLATE</a></h1>
-        </div> -->
         <div class="one">
-          <h1><a class="titles" onclick="toggleContent()" href="./time.html" target="box">TIME</a></h1>
+          <h1><a id="translate" class="titles" onclick="translateContent(); m_translateContent()">TRANSLATE</a></h1>
+        </div>
+        <div class="one">
+          <h1><a id="weather" class="titles" onclick="back()" href="./tool.html" target="box">TOOL</a></h1>
+        </div>
+        <div class="one">
+          <h1><a id="time" class="titles" onclick="back()" href="./time.html" target="box">TIME</a></h1>
         </div>
       </div>
 
       <div class="content" id="content">
-        <button class="back-btn" onclick="back()">︿</button>
-        <iframe class="box" name="box" frameborder="0" src="./bookmark.html"></iframe>
+        <iframe aria-label="framebox" class="box" name="box" frameborder="0" src="./bookmark.html"></iframe>
+        <table id="translate_box">
+        <button aria-label="back-btn" class="back-btn" onclick="m_back()" type="button">︿</button>
+          <tbody id="tbody">
+          </tbody>
+        </table>
       </div>
-      <script src="./js/index/m-content.js"></script>
+
     </div>
+    <script src="./js/index/m-content.js"></script>
+    <script src="./js/index/translate.js"></script>
     <!-- <script src="./js/index/backgroud.js"></script> -->
   </div>
 
