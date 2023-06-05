@@ -11,7 +11,6 @@ body {
 
 .Time>time {
     font-size: 400%;
-    line-height: 16vh;
     padding-right: 5%;
     text-align: right;
 }
@@ -19,11 +18,11 @@ body {
 #y {
     font-family: "Times New Roman", Times, serif;
     font-weight: bold;
-    color: rgba(50, 50, 50, 0.99);
+    color: rgba(55, 55, 55, 0.95);
 }
 
 #w {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family: "Times New Roman", Times, serif;
     font-weight: bold;
     color: rgba(50, 50, 50, 0.6);
 }
@@ -35,26 +34,25 @@ body {
 }
 
 #m {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family: "Times New Roman", Times, serif;
     font-weight: bold;
-    color: rgba(50, 50, 50, 0.99);
+    color: rgba(55, 55, 55, 0.95);
 }
 
 #t {
-    font-family: Impact, Charcoal, sans-serif;
-    color: rgba(50, 50, 50, 0.99);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: rgba(50, 50, 50, 0.95);
 }
 
 #s {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    font-weight: bold;
-    color: rgba(50, 50, 50, .6);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: rgba(50, 50, 50, 0.6);
 }
-
 
 @media screen and (max-width: 600px) {
     .Time>time {
         font-size: 500%;
-        line-height: 16.5vh
     }
 }
