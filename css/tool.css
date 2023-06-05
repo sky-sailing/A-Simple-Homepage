@@ -3,6 +3,10 @@ body {
     margin: 0;
 }
 
+body::-webkit-scrollbar { 
+    width: 0 !important;
+  }
+
 #ipbox {
     display: flex;
     height: 100vh;

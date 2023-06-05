@@ -5,9 +5,11 @@ body {
   margin: 0;
 }
 
-.case::-webkit-scrollbar { 
+.case::-webkit-scrollbar {
   width: 0 !important;
 }
+
+/* ——————————————————————————————————————————分割线———————————————————————————————————————————————————— */
 
 #framework {
   display: flex;
@@ -18,21 +20,24 @@ body {
   width: 100vw;
 }
 
-.search_bar {
+#search {
+  -webkit-animation: fadeIn 2.5s;
   animation: fadeIn 2.5s;
   background-color: rgba(255, 255, 255, 0);
   border: none;
-  border-bottom: solid rgba(74, 66, 102, .255);
-  /* border-radius: 5px; */
-  /* box-shadow: 0 0 5px rgba(70, 70, 40, .255); */
-  height: 55px;
+  display: flex;
+  flex-direction: column;
+  height: 60px;
   margin: 0 2vw;
-  /* min-height: 50px;
-  min-width: 200px; */
   position: -webkit-sticky;
   position: sticky;
-  -webkit-animation: fadeIn 2.5s;
   top: 15px;
+}
+
+#search_bar {
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid rgba(74, 66, 102, .255);
 }
 
 #search_web {
@@ -41,9 +46,9 @@ body {
   color: rgb(74, 66, 102);
   float: left;
   font-family: Impact, Charcoal, sans-serif;
-  font-size: 2em;
+  font-size: 2.25em;
   font-weight: 500;
-  height: 55px;
+  height: 60px;
   max-width: 200px;
   min-width: 50px;
   outline: 0;
@@ -51,13 +56,12 @@ body {
   width: 20%;
 }
 
-.search_input {
+#search_input {
   background-color: transparent;
   border: none;
-  border-radius: 50px;
   color: rgb(74, 66, 102);
-  font-size: 30px;
-  height: 55px;
+  font-size: 2em;
+  height: 60px;
   min-height: 35px;
   outline: 0;
   overflow: hidden;
@@ -65,70 +69,164 @@ body {
   width: 100%;
 }
 
-.search_submit {
+#search_submit {
   background-color: transparent;
   border: none;
   color: rgb(74, 66, 102);
   float: right;
-  font-size: 40px;
+  font-size: 2.5em;
   font-weight: 500;
-  height: 55px;
+  height: 60px;
   outline: 0;
   padding: 0 13px;
 }
 
+/* Search suggestion styles */
 .suggest {
   display: none;
-  position: relative;
+  width: 100%;
 }
 
 .suggest ul {
-  background-color: rgba(230, 230, 230, 0.6);
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(70, 70, 40, .255);
-  color: rgb(74, 66, 102);
+  background-color: rgba(220, 220, 220, 0.55);
   list-style: none;
+  margin-top: 5px;
   padding: 0;
 }
 
 .suggest ul li {
+  background-color: transparent;
+  color: rgb(74, 66, 102);
   cursor: pointer;
   font-size: 20px;
-  line-height: 25px;
-  padding: 5px;
+  padding: 10px;
   text-align: center;
 }
 
 .suggest ul li:hover {
-  background-color: rgba(220, 220, 220, 0.55);
+  background-color: rgba(220, 220, 220, 0.7);
 }
 
 /* ——————————————————————————————————————————分割线———————————————————————————————————————————————————— */
 
+#translate_bar {
+  -webkit-animation: fadeIn 2.5s;
+  animation: fadeIn 2.5s;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: solid rgba(74, 66, 102, .255);
+  display: none;
+  height: 60px;
+  margin: 0 2vw;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 15px;
+}
+
+#translate_select {
+  background-color: transparent;
+  border: none;
+  color: rgb(74, 66, 102);
+  float: left;
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 2.25em;
+  font-weight: 600;
+  height: 60px;
+  letter-spacing: 1.5px;
+  max-width: 200px;
+  min-width: 50px;
+  outline: 0;
+  text-align: center;
+  width: 20%;
+}
+
+#translate_input {
+  background-color: transparent;
+  border: none;
+  color: rgb(74, 66, 102);
+  font-size: 30px;
+  height: 60px;
+  min-height: 35px;
+  outline: 0;
+  padding: 0 10px;
+  width: 100%;
+}
+
+#translate_submit {
+  background-color: transparent;
+  border: none;
+  color: rgb(74, 66, 102);
+  float: right;
+  font-size: 2em;
+  font-weight: 500;
+  height: 60px;
+  outline: 0;
+  padding: 0 13px;
+}
+
+#translate_box {
+  display: none;
+  height: 100%;
+  /* overflow: hidden; */
+  width: 100%;
+}
+
+tbody {
+  display: flex;  
+  flex-direction: row-reverse;
+  height: 95%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+tbody::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+tr {
+  display: flex;
+  flex-direction: column-reverse;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+tr::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+td {
+  color: rgb(74, 66, 102);
+  /* font-family: "Times New Roman", Times, serif; */
+  font-size: 8vw;
+  font-weight: 900;
+  text-align: right;
+  word-break: break-all;
+}
+
+/* ——————————————————————————————————————————分割线———————————————————————————————————————————————————— */
 .case {
   display: flex;
-  height: 70vh;
+  height: 75vh;
   width: 100vw;
   flex-direction: row;
 }
 
 .menu {
-  /* box-shadow: 10px 10px 5px #888888;  */
-  /* border-right: 2px solid rgba(74, 66, 102, .255); */
   display: flex;
   flex-direction: column-reverse;
   width: 30%;
 }
 
 .one {
-  margin-left: 10%;
-  margin-right: 10%;
+  line-height: 40px;
+  margin: 2.5% 10%;
 }
 
 a.titles {
   color: rgb(70, 70, 70);
-  font-family: "Lucida Console", Monaco, monospace;
-  font-size: 6vw;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 4.5vw;
   font-weight: bold;
   letter-spacing: -3px;
   text-decoration: none;
@@ -160,26 +258,29 @@ a.titles {
 /* ——————————————————————————————————————————分割线———————————————————————————————————————————————————— */
 
 @media screen and (max-width: 650px) {
- 
-    a.titles {
+
+  a.titles {
     font-size: 15vw;
   }
-  
+
   .content {
     display: none;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
     width: 100vw;
   }
-}
 
-@media screen and (max-width: 720px) {
-  .search_submit {
-    display: none;
+  td {
+    margin-bottom: 7.5vh;
   }
 }
 
-/* @media screen and (max-width: 950px) {
+@media screen and (max-width: 720px) {
+  #search_submit {
+    display: none;
+  }
 
-
-} */
+  #translate_submit {
+    display: none;
+  }
+}
