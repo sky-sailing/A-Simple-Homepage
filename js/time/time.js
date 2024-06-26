@@ -19,18 +19,18 @@ weekday[6] = "Saturday";
 
 /* ——————————————————————————————————————————分割线———————————————————————————————————————————————————— */
 var month = new Array(12);
-month[0] = "January";
-month[1] = "February";
-month[2] = "March";
-month[3] = "April";
-month[4] = "May";
-month[5] = "June";
-month[6] = "July";
-month[7] = "August";
-month[8] = "September";
-month[9] = "October";
-month[10] = "November";
-month[11] = "December";
+month[0] = "JANUARY";
+month[1] = "FEBRUARY";
+month[2] = "MARCH";
+month[3] = "APRIL";
+month[4] = "MAY";
+month[5] = "JUNE";
+month[6] = "JULY";
+month[7] = "AUGUST";
+month[8] = "SEPTEMBER";
+month[9] = "OCTOBER";
+month[10] = "NOVEMBER";
+month[11] = "DECEMBER";
 
 /* ——————————————————————————————————————————分割线———————————————————————————————————————————————————— */
 function times() {
