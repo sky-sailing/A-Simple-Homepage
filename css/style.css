@@ -113,7 +113,6 @@ body {
   animation: fadeIn 2.5s;
   background-color: rgba(255, 255, 255, 0);
   border: none;
-  border-bottom: solid rgba(74, 66, 102, .255);
   display: none;
   height: 60px;
   margin: 0 2vw;
