@@ -37,7 +37,6 @@ body {
 #search_bar {
   display: flex;
   flex-direction: row;
-  border-bottom: solid rgba(74, 66, 102, .255);
 }
 
 #search_web {
