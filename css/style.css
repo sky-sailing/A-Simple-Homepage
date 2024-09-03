@@ -225,7 +225,7 @@ a.titles {
   color: rgb(70, 70, 70);
   font-family: Georgia, serif;
   font-size: 4.5vw;
-  font-weight: bold;
+  font-weight: 100;
   letter-spacing: -3px;
   text-decoration: none;
 }
