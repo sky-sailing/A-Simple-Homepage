@@ -10,7 +10,7 @@ function m_bookmarkContent() {
         for (let i = 0; i < hupu.length; i++) {
             hupu[i].href = "https://m.hupu.com/";
             ithome[i].href = "https://m.ithome.com/";
-            zhibo8[i].href = "https://m.zhibo8.cc/";
+            zhibo8[i].href = "https://m.zhibo8.com/";
         };
     };
   }
